@@ -6,7 +6,8 @@ plugins {
 
 android {
 	namespace = "com.example.android.trivialdrivesample"
-	compileSdk = 34
+	compileSdk = 36
+	buildToolsVersion = "36.0.0"
 
 	sourceSets {
 		getByName("main") {

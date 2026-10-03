@@ -10,7 +10,8 @@ version = "1.0-SNAPSHOT"
 
 android {
 	namespace = "ir.mservices.myketiap"
-	compileSdk = 34
+	compileSdk = 36
+	buildToolsVersion = "36.0.0"
 
 	sourceSets {
 		getByName("main") {
@@ -19,7 +20,7 @@ android {
 	}
 
 	defaultConfig {
-		minSdk = 16
+		minSdk = 21
 		consumerProguardFiles("proguard-base.txt")
 	}
 
