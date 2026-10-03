@@ -4,6 +4,10 @@ plugins {
 	id("dev.flutter.flutter-gradle-plugin")
 }
 
+kotlin {
+	jvmToolchain(17)
+}
+
 android {
 	namespace = "com.example.android.trivialdrivesample"
 	compileSdk = 36
@@ -42,10 +46,6 @@ android {
 	lint {
 		disable.add("InvalidPackage")
 		disable.add("ExpiredTargetSdkVersion")
-	}
-
-	kotlin {
-		jvmToolchain(21)
 	}
 }
 

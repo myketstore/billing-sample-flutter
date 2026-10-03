@@ -3,6 +3,10 @@ plugins {
 	id("org.jetbrains.kotlin.android")
 }
 
+kotlin {
+	jvmToolchain(17)
+}
+
 android {
 	namespace = "ir.mservices.myketiap"
 	compileSdk = 36
@@ -21,10 +25,6 @@ android {
 
 	lint {
 		disable.add("InvalidPackage")
-	}
-
-	kotlin {
-		jvmToolchain(21)
 	}
 }
 
