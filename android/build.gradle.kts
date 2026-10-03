@@ -3,9 +3,6 @@ plugins {
 	id("org.jetbrains.kotlin.android")
 }
 
-group = "ir.mservices.myketiap"
-version = "1.0-SNAPSHOT"
-
 android {
 	namespace = "ir.mservices.myketiap"
 	compileSdk = 36
@@ -32,7 +29,7 @@ android {
 }
 
 dependencies {
-	implementation("org.jetbrains.kotlin:kotlin-stdlib-jdk7:2.2.20")
-	implementation("com.google.code.gson:gson:2.10.1")
 	implementation("ir.myket:billing:2.2")
+	implementation("org.jetbrains.kotlin:kotlin-stdlib:2.2.20")
+	implementation("com.google.code.gson:gson:2.10.1")
 }
