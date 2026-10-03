@@ -11,11 +11,10 @@ pluginManagement {
 	includeBuild("$flutterSdkPath/packages/flutter_tools/gradle")
 
 	repositories {
-		mavenLocal()
-		maven { url = uri("https://maven.myket.ir") }
+		maven("https://maven.myket.ir")
 		google()
-		mavenCentral()
 		gradlePluginPortal()
+		mavenCentral()
 	}
 }
 
@@ -28,11 +27,9 @@ plugins {
 dependencyResolutionManagement {
 	repositoriesMode.set(RepositoriesMode.PREFER_SETTINGS)
 	repositories {
-		mavenLocal()
-		maven { url = uri("https://maven.myket.ir") }
+		maven("https://maven.myket.ir")
 		google()
 		mavenCentral()
-		maven { url = uri("https://jitpack.io") }
 	}
 }
 

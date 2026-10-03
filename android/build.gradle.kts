@@ -1,3 +1,5 @@
+package android
+
 plugins {
 	id("com.android.library")
 	id("org.jetbrains.kotlin.android")
@@ -31,8 +33,7 @@ android {
 }
 
 dependencies {
-	val kotlinVersion = "2.2.20"
-	implementation("org.jetbrains.kotlin:kotlin-stdlib-jdk7:$kotlinVersion")
+	implementation("org.jetbrains.kotlin:kotlin-stdlib-jdk7:2.2.20")
 	implementation("com.google.code.gson:gson:2.10.1")
 	implementation("ir.myket:billing:2.2")
 }
