@@ -1,16 +1,35 @@
-# myketiap_example
+# myket_iap Example Application
 
-Demonstrates how to use the myket_iap plugin.
+A sample Flutter application demonstrating how to integrate and use the [`myket_iap`](../README.md) plugin for Android in-app purchases.
+
+This project is an adaptation of the classic **Trivial Drive** billing scenario, demonstrating:
+- Initializing the Myket billing service with your RSA public key.
+- Querying inventory and SKU details on app startup.
+- Purchasing consumable items (Gas tank refills).
+- Consuming items via `MyketIAP.consume()`.
+- Purchasing non-consumable items (Upgrade to Premium).
+- Developer payload generation and signature verification.
+- Handling billing errors and user cancellations gracefully.
+
+---
 
 ## Getting Started
 
-This project is a starting point for a Flutter application.
+### 1. Prerequisites
+- An Android device or emulator with the **Myket app** installed.
+- An active Myket developer account with your test SKUs configured.
 
-A few resources to get you started if this is your first Flutter project:
+### 2. Configuration
+Open [`lib/main.dart`](lib/main.dart) and configure:
+1. **RSA Public Key**: Replace the sample public key in `initIab()` with your app's public key from the Myket Developer Panel.
+2. **SKUs**: Adjust `SKU_GAS` and `SKU_PREMIUM` to match your registered products on Myket.
 
-- [Lab: Write your first Flutter app](https://flutter.dev/docs/get-started/codelab)
-- [Cookbook: Useful Flutter samples](https://flutter.dev/docs/cookbook)
+### 3. Run the App
+From the `example` directory, run:
 
-For help getting started with Flutter, view our
-[online documentation](https://flutter.dev/docs), which offers tutorials,
-samples, guidance on mobile development, and a full API reference.
+```bash
+flutter pub get
+flutter run
+```
+
+For more detailed setup instructions, Gradle configurations, and API reference, refer to the [main plugin README](../README.md).

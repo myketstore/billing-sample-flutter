@@ -1,3 +1,10 @@
+## 2.2.0
+
+* Update Myket Billing library to 2.2
+* Migrate Android Gradle configuration and build scripts to Kotlin DSL (`.kts`)
+* Upgrade `compileSdk` to 36 and `minSdk` to 21
+* Configure JVM toolchain to 17
+
 ## 1.1.11
 
 * Update billing library to 1.18
