@@ -72,7 +72,7 @@ Or add it directly to your `pubspec.yaml`:
 dependencies:
   flutter:
     sdk: flutter
-  myket_iap: ^2.2.0
+  myket_iap: ^2.0.1
 ```
 
 Then run:

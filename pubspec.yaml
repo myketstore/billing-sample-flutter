@@ -1,8 +1,8 @@
 name: myket_iap
 description: Myket In App Purchase plugin for flutter for android applications.
-version: 2.2.0
-repository: https://github.com/myketstore/myket-billing-flutter
-issue_tracker: https://github.com/myketstore/myket-billing-flutter/issues
+version: 2.0.1
+repository: https://github.com/myketstore/billing-sample-flutter
+issue_tracker: https://github.com/myketstore/billing-sample-flutter/issues
 homepage: https://myket.ir
 
 environment:
